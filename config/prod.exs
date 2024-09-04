@@ -6,6 +6,7 @@ import Config
 # which you should run after static files are built and
 # before starting your production server.
 config :yap, YapWeb.Endpoint, cache_static_manifest: "priv/static/cache_manifest.json"
+config :yap, YapWeb.Endpoint, force_ssl: [rewrite_on: [:x_forwarded_proto]]
 
 # Configures Swoosh API Client
 config :swoosh, api_client: Swoosh.ApiClient.Finch, finch_name: Yap.Finch
