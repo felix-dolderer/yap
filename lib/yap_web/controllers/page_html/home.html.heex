@@ -4,10 +4,10 @@
   <p class="text-2xl">Your AI-powered personal assistant</p>
   <%= if @current_user do %>
   <.link
-    href={~p"/users/settings"}
+    href={~p"/tasks"}
     class="bg-gradient-to-r from-slate-600 to-slate-800 text-white px-4 py-2 rounded-md hover:from-slate-700 hover:to-slate-900 transition-colors duration-300"
   >
-    Settings
+    Tasks
   </.link>
   <% else %>
   <.link
